@@ -1,0 +1,22 @@
+.content__items_person{
+    font-size: 32px;
+    text-align: center;
+    .content__items_person-name{
+        margin: 0 0 25px 0;
+        .content__items_person-name_hello{
+            text-transform: capitalize;
+        }
+        .content__items_person-name_name{
+            font-weight: bold;
+        }
+    }
+
+    .content__items_person-target{
+        font-weight: bold;
+        .content__items_person-target_what{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            margin: 0 0 10px 0;
+        }
+    }
+}

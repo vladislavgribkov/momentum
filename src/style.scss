@@ -1,3 +1,104 @@
 @import "~normalize.css";
 @import "~reset-css";
 @import 'assets/scss/components/date.scss';
+@import 'assets/scss/components/person.scss';
+body{
+    background: url("assets/images/afternoon/01.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Dancing Script', cursive;
+    transition: background 1s ease;
+    .refresh{
+        font-weight: bold;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: 1%;
+        top: 1%;
+        background-color:rgba($color: #FFF0F5, $alpha: 0.7);
+        border-radius: 50%;
+        border: none; 
+        outline: none; 
+        &:hover{
+            cursor: pointer;
+            background-color: #00BFFF;
+            transform: rotate(360deg);
+            transition: 1s;
+        }
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .content{
+       width: 100%;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       .container{
+            margin: 0 auto;
+            width: 600px;
+            height: 450px;
+            background-color:rgba($color: #FFF0F5, $alpha: 0.7);
+            .content__items{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                .content__items_weather{
+                    text-align: center;
+                    font-size: 18px;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    .content__items_weather-city{
+                        font-weight: bold;
+                        font-size: 24px;
+                    }
+                    .content__items_weather-weather{
+                        display: flex;
+                        justify-content: space-between;
+                        font-family: 'Times New Roman', Times, serif;
+                        text-transform: capitalize;
+                        .weather-icon{
+                            margin: 0 15px 0 0;
+                        }
+                        .temperature{
+                            margin: 0 15px 0 0;
+                        }
+                    }
+                }
+            }
+       }
+       .content__quote{
+           width: 90%;
+           height: 50px;
+           font-size: 18px;
+           background-color:rgba($color: #FFF0F5, $alpha: 0.7);
+           display: flex;
+           align-items: center;
+           justify-content: space-around;
+           font-size: 21px;
+           font-weight: bold;
+           .content__quote-btn{
+                outline: none;
+                cursor: pointer;
+                &:hover{
+                    background-color: #00BFFF;
+                    border: 1px solid #000000;
+                }
+           }
+           .content__quote-text{
+               width: 80%;
+               text-align: center;
+           }
+       }
+    }
+}

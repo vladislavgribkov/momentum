@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/style/owfont-regular.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
+    <button class="refresh">
+        Next image
+    </button>
+    <div class="content">
+        <div class="container">
+            <div class="content__items">
+                <div class="content__items_weather">
+                    <div class="content__items_weather-city"><span contenteditable="true" class="city">Minsk</span></div>
+                    <div class="content__items_weather-weather">
+                        <i class="weather-icon owf"></i>
+                        <div class="temperature"></div>
+                        <div class="weather-description"></div>
+                    </div>
+                </div>
+                <div class="content__items_date">
+                   <div class="content__items_date-time">
+                        20:21:30
+                   </div>
+                   <div class="content__items_date-date">
+                        Sutuday, 17 October
+                   </div>
+                </div>
+                <div class="content__items_person">
+                    <div class="content__items_person-name">
+                        <span class="content__items_person-name_hello">Good Afternoon, </span>
+                        <span contenteditable="true" class="content__items_person-name_name">[enter name]</span>
+                    </div>
+                    <div class="content__items_person-target">
+                        <h1 class="content__items_person-target_what">What is your main focus for today?</h1>
+                        <span contenteditable="true" class="content__items_person-target_edit">[enter focus]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__quote">
+            <button class="content__quote-btn">Update quote</button>
+            <div class="content__quote-text"></div>
+        </div>
+    </div>
 </body>
 </html>

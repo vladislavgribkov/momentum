@@ -89,6 +89,7 @@ module.exports = {
             plugins: [
               // ["no-side-effect-class-properties"],
               ["@babel/plugin-proposal-class-properties", { "loose": true }],
+
             ],
           },
         }
