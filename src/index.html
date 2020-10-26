@@ -11,6 +11,9 @@
     <button class="refresh">
         Next image
     </button>
+    <div class="next">
+        <img class="nextImage" src="#" alt="image">
+    </div>
     <div class="content">
         <div class="container">
             <div class="content__items">
@@ -18,16 +21,16 @@
                     <div class="content__items_weather-city"><span contenteditable="true" class="city">Minsk</span></div>
                     <div class="content__items_weather-weather">
                         <i class="weather-icon owf"></i>
-                        <div class="temperature"></div>
                         <div class="weather-description"></div>
+                        <div class="temperature"></div>
+                        <div class="weather-humidity"></div>
+                        <div class="weather-speed"></div>
                     </div>
                 </div>
                 <div class="content__items_date">
                    <div class="content__items_date-time">
-                        20:21:30
                    </div>
                    <div class="content__items_date-date">
-                        Sutuday, 17 October
                    </div>
                 </div>
                 <div class="content__items_person">
@@ -43,8 +46,19 @@
             </div>
         </div>
         <div class="content__quote">
-            <button class="content__quote-btn">Update quote</button>
+            <div class="content__quote-btn">
+                <img src="../src/assets/images/refresh.svg" alt="image">
+            </div>
             <div class="content__quote-text"></div>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="popup__content">
+            <button class="popup__content_button">Close</button>
+            <div class="popup__content_text">
+                <div class="popup__content_text-text">
+                </div>
+            </div>
         </div>
     </div>
 </body>

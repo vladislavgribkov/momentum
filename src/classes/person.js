@@ -13,6 +13,9 @@ export default class Person{
         if(localStorage.getItem('city') === null){
             localStorage.setItem('city','Minsk');
         }
+        if(localStorage.getItem('lastCity') === null){
+            localStorage.setItem('lastCity','Minsk');
+        }
     }
 
     getPerson(){
@@ -36,6 +39,14 @@ export default class Person{
     }
 
     setCity(city){
+        this.setLastCity(localStorage.getItem('city'));
         localStorage.setItem('city', city);
+    }
+
+    getLastCity(){
+       return localStorage.getItem('lastCity');
+    }
+    setLastCity(city){
+        localStorage.setItem('lastCity', city);
     }
 }

@@ -35,13 +35,14 @@ module.exports = {
       filename: isDev ? '[name].css' : '[name].[contenthash].css',
       chunkFilename: isDev ? '[id].css' : '[id].[contenthash].css',
     }),
-    // new CopyPlugin(
-    //   // {
-    //   // patterns: [
-    //   //   { from: './src/assets/images/pets', to: './images/pets' },
-    //   // ],
-    // // }
-    // ),
+    new CopyPlugin(
+      {
+      patterns: [
+        { from: './src/assets/images/', to: './src/assets/images/' },
+        { from: './src/assets/style/', to: './src/assets/style/' },
+      ],
+    }
+    ),
   ],
   module: {
     rules: [
@@ -78,6 +79,10 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: 'html-loader',
+      },
+      {
+        test: /\.(ttf|woff|woff2|eot)$/i,
+        loader: 'file-loader',
       },
       {
         test: /\.m?js$/,

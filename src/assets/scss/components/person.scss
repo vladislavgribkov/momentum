@@ -1,13 +1,35 @@
 .content__items_person{
     font-size: 32px;
     text-align: center;
+    @media screen and (max-width: 1200px) {
+        font-size: 18px;
+     }
+     @media screen and (max-width: 768px) {
+        font-size: 15px;
+     }
     .content__items_person-name{
         margin: 0 0 25px 0;
+        @media screen and (max-width: 1200px) {
+            margin: 0 0 5px 0;
+         }
         .content__items_person-name_hello{
             text-transform: capitalize;
         }
         .content__items_person-name_name{
             font-weight: bold;
+            position: relative;
+            &:hover{
+                cursor: pointer;
+                &:after{
+                    content: '';
+                    animation: identifier 0.7s ease forwards;
+                    position: absolute;
+                    top: 100%;
+                    left: 0%;
+                    height: 2px;
+                    background: #000000;
+                }
+            }
         }
     }
 
@@ -15,8 +37,33 @@
         font-weight: bold;
         .content__items_person-target_what{
             font-family: 'Times New Roman', Times, serif;
-            font-size: 28px;
+            font-size: 24px;
             margin: 0 0 10px 0;
+            @media screen and (max-width: 1200px) {
+                font-size: 18px;
+             }
+             @media screen and (max-width: 768px) {
+                font-size: 15px;
+                margin: 0;
+             }
+        }
+        .content__items_person-target_edit{
+            position: relative;
+            &:hover{
+                cursor: pointer;
+                &:after{
+                    content: '';
+                    animation: identifier 0.7s ease forwards;
+                    position: absolute;
+                    top: 100%;
+                    left: 0%;
+                    height: 2px;
+                    background: #000000;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+             }
         }
     }
 }

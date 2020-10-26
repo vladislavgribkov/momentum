@@ -1,6 +1,7 @@
 export default class Images{
     constructor(){
         this.arrayImages = this.getRandomImages();
+        this.location = '';
     }
     
     getRandomImages(){
